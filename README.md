@@ -1,10 +1,88 @@
-# Google Maps App
+# Google Maps Nearby Places App
 
-A new Flutter app built with Google Maps that displays interesting places in the vicinity.
+A Flutter application that helps users discover and explore interesting places in their vicinity using Google Maps. The app provides an interactive map interface with features like place search, favorites, directions, and detailed place information.
 
-How do I code this ? - https://youtu.be/x0QNPHYATj4
+## Features
+
+- 🗺️ Interactive Google Maps integration
+- 🔍 Search for places with autocomplete suggestions
+- 📍 View nearby places with detailed information
+- ⭐ Save favorite places
+- 🛣️ Get directions between locations
+- 📱 Beautiful and responsive UI
+- ⚡ Smooth animations and transitions
+- 💫 Place details including ratings and reviews
+
+## Prerequisites
+
+- Flutter SDK (>=2.15.1 <3.0.0)
+- Google Maps API Key
+- Android Studio / VS Code
+- Basic knowledge of Flutter development
+
+## Dependencies
+
+- google_maps_flutter: For Google Maps integration
+- flutter_polyline_points: For drawing routes on the map
+- http: For API calls
+- flutter_riverpod: For state management
+- fab_circular_menu: For floating action menu
+- flutter_rating_stars: For place ratings
+- flip_card: For place card animations
+- lottie: For animations
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/flutter-googlemaps-nearbyplaces.git
+   ```
+
+2. Get dependencies:
+   ```bash
+   flutter pub get
+   ```
+
+3. Configure Google Maps API:
+   - Get an API key from [Google Cloud Console](https://console.cloud.google.com)
+   - Enable the following APIs:
+     - Maps SDK for Android/iOS
+     - Places API
+     - Directions API
+   - Replace `<yourkeyhere>` in `lib/services/map_services.dart` with your API key
+
+4. Run the app:
+   ```bash
+   flutter run
+   ```
+
+## Project Structure
+
+- `lib/screens/`: Contains the main UI screens
+- `lib/services/`: Contains API and map services
+- `lib/models/`: Contains data models
+- `assets/`: Contains fonts, icons, and animation files
+
+## Features in Detail
+
+### Place Search
+- Autocomplete suggestions while typing
+- Search for specific locations
+- View place details including address, ratings, and photos
+
+### Navigation
+- Get directions between two locations
+- View route on the map
+- Animated camera movements
+
+### UI/UX
+- Custom markers for locations
+- Smooth animations for place cards
+- Interactive floating action menu
+- Custom fonts and styling
 
 ## Screenshots
+
 ![Screenshot_20220606-055028](https://user-images.githubusercontent.com/8137504/172486850-864ac272-6a0a-4775-add3-4c5271220c2c.png)
 ![Screenshot_20220606-054938](https://user-images.githubusercontent.com/8137504/172486852-a35ba6db-6438-4457-bfc3-25ea01720e12.png)
 ![Screenshot_20220606-054920](https://user-images.githubusercontent.com/8137504/172486856-b3b66457-85a0-4dcb-b9a2-ac159fc7988b.png)
@@ -17,6 +95,14 @@ How do I code this ? - https://youtu.be/x0QNPHYATj4
 ![Screenshot_20220606-055138](https://user-images.githubusercontent.com/8137504/172486844-9a754824-34c8-447c-a462-908daa268307.png)
 ![Screenshot_20220606-055123](https://user-images.githubusercontent.com/8137504/172486845-b11627e6-00c6-480b-899f-088af63c0ab5.png)
 ![Screenshot_20220606-055100](https://user-images.githubusercontent.com/8137504/172486848-7dfad88e-0cab-4b37-b3a2-835974857d96.png)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 
 
